@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Whatsap 2.0</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: rgb(240, 244, 249);
+        }
+
+        .square {
+            width: 50vh;
+            height: 70vh;
+            background-color: #ffffff;
+            border-radius: 7%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .logoSquare {
+            width: 4vh;
+            height: 4vh;
+            background-image: url('download.png');
+            background-size: cover;
+            background-position: center;
+            border-radius: 20%;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .title {
+            width: 100%;
+            margin-top: -30px;
+            margin-left: 0;
+            font-family: Arial;
+            font-size: 30px;
+        }
+
+        .subTitle {
+            width: 100%;
+            margin-top: -90px;
+            font-family: Arial;
+            letter-spacing: 0.5px;
+            font-size: 15px;
+        }
+
+        .inputBox {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: -100px;
+						margin-bottom: 10px;
+        }
+
+        .label {
+            font-family: Arial;
+            font-size: 14px;
+            color: rgb(80, 80, 80);
+            margin-bottom: 5px;
+        }
+
+        .rectangle {
+            width: 90%;
+            height: 45px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding-left: 10px;
+            font-size: 15px;
+						
+        }
+
+				.esqueceu {
+					background-color: transparent;
+					border: none;
+					font-family: Arial;
+					color: rgb(14, 113, 206);
+					font-weight: bold;
+					font-size: 15px;
+					cursor: pointer;
+
+					display: flex;            /* já está */
+					justify-content: center;  /* centraliza horizontalmente */
+					align-items: center;      /* centraliza verticalmente */
+
+					width: 100px;
+					height: 40px;
+					border-radius: 35px;
+					margin-top: 20px;
+					text-align: center;       /* não é mais necessário com flex */
+				}
+				.esqueceu:hover {
+					background-color: rgb(239, 246, 255);
+				}
+
+				.next {
+					background-color: transparent;
+					border: none;
+					font-family: Arial;
+					color: rgb(255, 255, 255);
+					background-color: rgb(21, 109, 240);
+					font-weight: bold;
+					font-size: 15px;
+					cursor: pointer;
+					
+					display: flex;            /* já está */
+					justify-content: center;  /* centraliza horizontalmente */
+					align-items: center;      /* centraliza verticalmente */
+
+					width: 100px;
+					height: 40px;
+					border-radius: 35px;
+					margin-top: 10px;
+					text-align: center;       /* não é mais necessário com flex */
+				}
+				.esqueceu:hover {
+					background-color: rgb(239, 246, 255);
+				}
+    </style>
+
+</head>
+<body>
+
+    <div class="square">
+
+        <div class="logoSquare"></div>
+
+        <p class="title">Fazer login</p>
+
+        <p class="subTitle">
+            com sua Conta Whatzap Clonado. Você podera ter acesso <br>
+            a diversos outros numero de Whatzap Clonado.
+        </p>
+
+        <!-- Campo 1 -->
+        <div class="inputBox">
+            <label class="label">Nome de Usuário</label>
+            <input type="text" class="rectangle" placeholder="Digite seu nome">
+        </div>
+
+        <!-- Campo 2 -->
+        <div class="inputBox">
+            <label class="label">Senha</label>
+            <input type="password" class="rectangle" placeholder="Digite sua senha">
+						<label class="subTitle" style="margin-top: 20px;">Esqueceu sua senha? Não tem problema, aqui no Whatzap Clonado <br> te damos 1 ano de garantia!</label>
+						<button onclick='' class="esqueceu">Esqueceu?</button>
+						<button onclick='' class="esqueceu">Criar Conta</button>
+						<button onclick='' class="next">Avançar</button>
+					</div>
+
+    </div>
+
+</body>
+</html>
